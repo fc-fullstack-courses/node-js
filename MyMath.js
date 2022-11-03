@@ -15,9 +15,9 @@ module.exports.MyMath = MyMath;
 
 module.exports; // реальные експортириуемые данные
 
-// console.log(module.exports);
+console.log('MyMath');
 
-module.exports = 10;
+// module.exports = 10;
 // bad
 // exports = {}
 // const exports = module.exports;
