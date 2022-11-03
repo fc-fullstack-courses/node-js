@@ -8,10 +8,17 @@ class MyMath {
 const data = 'test';
 
 // СommonJS exporting
-exports.add = MyMath.sum;
-exports.subtract = MyMath.minus;
-exports.data = data;
-exports.MyMath = MyMath;
+module.exports.add = MyMath.sum;
+module.exports.subtract = MyMath.minus;
+module.exports.data = data;
+module.exports.MyMath = MyMath;
 
+module.exports; // реальные експортириуемые данные
+
+// console.log(module.exports);
+
+module.exports = 10;
 // bad
 // exports = {}
+// const exports = module.exports;
+

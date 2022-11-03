@@ -1,9 +1,10 @@
-'use strict';
 // CommonJS import
-const { add, subtract, MyMath, data: otherData } = require('./MyMath.js');
+const importedData = require('./MyMath.js');
 
-console.log('JS file execution began');
+// console.log('JS file execution began');
 const data = 123;
-console.log(subtract(2, 2, 2));
+// console.log(subtract(2, 2, 2));
 
-console.log('JS file execution ended');
+console.log(importedData);
+
+// console.log('JS file execution ended');
