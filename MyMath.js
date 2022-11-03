@@ -5,9 +5,13 @@ class MyMath {
   static minus = (...numbers) => numbers.reduce((acc, num) => acc - num);
 }
 
+const data = 'test';
+
 // СommonJS exporting
 exports.add = MyMath.sum;
 exports.subtract = MyMath.minus;
+exports.data = data;
+exports.MyMath = MyMath;
 
 // bad
 // exports = {}
