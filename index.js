@@ -11,6 +11,12 @@ fs.readFile('./text.txt', 'utf-8').then((text) => {
   console.log(text);
 });
 
+// fs.appendFile('./text.txt', '\nThis is new');
+fs.readFile('./text.txt', 'utf-8').then((text) => {
+  const newText = `${text}\nThis is new by writeFile`;
+  fs.writeFile('./text.txt', newText);
+});
+
 // 1 resolving - ищет ваш файл
 // 1.1 включаются core модули ноды
 // 1.2 ищет файл по пути из строки в require

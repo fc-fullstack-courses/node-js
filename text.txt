@@ -1,1 +1,5 @@
 Some secret text
+This is new
+This is new
+This is new
+This is new by writeFile
