@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My first packet",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "show-folder": "ls"

@@ -8,19 +8,22 @@ class MyMath {
 const data = 'test';
 
 // СommonJS exporting
-module.exports.add = MyMath.sum;
-module.exports.subtract = MyMath.minus;
-module.exports.data = data;
-module.exports.MyMath = MyMath;
-
-module.exports; // реальные експортириуемые данные
-
-console.log('MyMath');
-
+// module.exports.add = MyMath.sum;
+// module.exports.subtract = MyMath.minus;
+// module.exports.data = data;
+// module.exports.MyMath = MyMath;
+// module.exports; // реальные експортириуемые данные
 // module.exports = 10;
+// console.log('MyMath');
+
 // bad
 // exports = {}
 // const exports = module.exports;
+
+// ESModules exporting
+export default MyMath; // экспорт по умолчанию можно делать один раз в файле
+// export default data; 
+
 
 /*
 123

@@ -3,12 +3,14 @@
 // const MyComponent = require('./MyComponent');
 // console.log('index');
 
-const fs = require('fs/promises');
-const _ = require('lodash');
+// const fs = require('fs/promises');
+// const _ = require('lodash');
 
-const number = _.random(-100, 100, false);
-console.log(number);
+// ESModules importing
+import MyMath from './MyMath.js'; // импорт єкпорта по умолчанию
 
+// const number = _.random(-100, 100, false);
+console.log(MyMath);
 
 // 1 resolving - ищет ваш файл
 // 1.1 включаются core модули ноды
