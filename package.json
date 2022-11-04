@@ -1,3 +1,25 @@
 {
-  "main": "index.js"
+  "name": "my-packet",
+  "version": "1.0.0",
+  "description": "My first packet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fc-fullstack-courses/node-js.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fc-fullstack-courses/node-js/issues"
+  },
+  "homepage": "https://github.com/fc-fullstack-courses/node-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
