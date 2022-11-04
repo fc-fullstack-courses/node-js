@@ -22,3 +22,7 @@ console.log('MyMath');
 // exports = {}
 // const exports = module.exports;
 
+/*
+123
+00000123
+*/
