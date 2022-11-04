@@ -4,18 +4,11 @@
 // console.log('index');
 
 const fs = require('fs/promises');
-// const fs = require('fs').promises;
+const _ = require('lodash');
 
-// fs.readFile('./text.txt', 'utf-8').then(console.log);
-fs.readFile('./text.txt', 'utf-8').then((text) => {
-  console.log(text);
-});
+const number = _.random(-100, 100, false);
+console.log(number);
 
-// fs.appendFile('./text.txt', '\nThis is new');
-fs.readFile('./text.txt', 'utf-8').then((text) => {
-  const newText = `${text}\nThis is new by writeFile`;
-  fs.writeFile('./text.txt', newText);
-});
 
 // 1 resolving - ищет ваш файл
 // 1.1 включаются core модули ноды
@@ -26,7 +19,7 @@ fs.readFile('./text.txt', 'utf-8').then((text) => {
 // 1.3.1 package.json -> "main"
 // 1.3.2 index.js
 // 1.3.3 index.json
-// 1.4 смотрит, есть ли папка
+// 1.4 смотрит, есть ли папка node_modules
 // 1.5 кидаем ошибку, нечего импортировать
 // 2 loading - читаем файл
 // 3 wrapping - оборачиват файл в функцию, при этом добавляет
