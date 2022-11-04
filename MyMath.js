@@ -22,8 +22,9 @@ const data = 'test';
 
 // ESModules exporting
 export default MyMath; // экспорт по умолчанию можно делать один раз в файле
-// export default data; 
-
+// export default data;
+export const sum = MyMath.sum; // именной экспорт
+export const number = 42;
 
 /*
 123

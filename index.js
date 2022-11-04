@@ -7,10 +7,14 @@
 // const _ = require('lodash');
 
 // ESModules importing
-import MyMath from './MyMath.js'; // импорт єкпорта по умолчанию
+// import MyMath from './MyMath.js'; // импорт єкпорта по умолчанию
+// import { sum as add, number } from './MyMath.js'; // именной импорт
+// import MyMath, { sum as add, number } from './MyMath.js';
+import * as MyMathModule from './MyMath.js'; // импортируем все сразу в общий обьект
 
 // const number = _.random(-100, 100, false);
-console.log(MyMath);
+console.log(MyMathModule);
+// console.log(MyMath);
 
 // 1 resolving - ищет ваш файл
 // 1.1 включаются core модули ноды
